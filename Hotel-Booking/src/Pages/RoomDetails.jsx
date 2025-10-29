@@ -28,7 +28,7 @@ const RoomDetails = () => {
                 <StarRating />
                 <p className='ml-2'>200+ reviews</p>
             </div>
-            {/* Room Address */}
+            {/* Room Addresss */}
             <div className='flex items-center gap-1 text-gray-500 mt-2'>
                 <img src={assets.locationFilledIcon} alt="location-icon" />
                 <span>{room.hotel.address}</span>
