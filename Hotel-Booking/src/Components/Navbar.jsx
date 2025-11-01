@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: 'Home', path: '/' },
         { name: 'Hotels', path: '/rooms' },
         { name: 'Experience', path: '/my-bookings' },
-        { name: 'About', path: '/' },
+    
     ];
 
 
@@ -63,7 +63,7 @@ const Navbar = () => {
                         <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                     </a>
                 ))}
-                <button onClick={() => navigate('/owner')} className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
+                <button  className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
                     Dashboard
                 </button>
             </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
                     </a>
                 ))}
 
-                {user && <button onClick={() => navigate('/owner')} className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
+                {user && <button  className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
                     Dashboard
                 </button>}
 
